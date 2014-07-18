@@ -1,0 +1,255 @@
+/*********************/
+/* LessCSS Variables */
+/*********************/
+
+@green: #b7be7e;
+@pink: #f34253;
+@white: #999999;
+
+@large: 3.5em;
+@menuText: 1.6em;
+@contentText: 1.1em;
+@headerText: 2em;
+
+@sansFonts: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+@serifFonts: Georgia, Times, "Times New Roman", serif;
+
+
+/***************************/
+/* Containers and Elements */
+/***************************/
+
+body { 
+	background: url('../images/lib/background.png') fixed; 
+}
+
+.container {
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 920px;
+}
+
+.content { 
+	margin-top: -7px; 
+	margin-left: 80px;
+}
+
+.row { margin-bottom: 25px; }
+
+.span2 { margin-left: 70px;	}
+
+#main {	margin-top: 50px; }
+
+
+body, .content, p {
+	font-family: @sansFonts;
+	color: @white;
+}
+
+.content, p {
+	font-size: @contentText;
+	text-align: justify;
+}
+
+hr {
+	width: 495px;
+	margin-left: 175px;
+	margin-bottom: 50px;
+	border-bottom: 1px solid @green;
+}
+
+h1 {
+	color: @pink;
+	font-size: @headerText;
+	margin-left: 175px;
+	margin-bottom: 1em;
+}
+
+p {
+	margin-bottom: 1em;
+	font-family: @serifFonts;
+	line-height: 1.4em;
+}
+
+a {
+	color: @green;
+	text-decoration: none;
+}
+
+a:hover {
+	color: @pink;
+	text-decoration: none;
+}
+
+
+
+/**********/
+/* Header */
+/**********/
+
+header {
+	width: 920px;
+	height: 80px;
+	margin: 50px 0 0 0px;
+	line-height: 2.8em;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+header #titleWrapper {
+	position: absolute;
+	width: 920px;
+	height: 80px;
+	left: 0px;	
+}
+
+
+header #headerTop {	
+	position: absolute;
+	top: 0;
+	right: 250px;
+	
+	color: @green;
+	font-size: @large;
+	text-align: right;
+
+}
+
+header #headerBottom {
+	position: absolute;
+	bottom: 0px;
+	right: 250px;
+	text-align: right;
+	color: @pink;
+	font-size: @large;
+	text-align: right;
+	vertical-align: bottom;
+}
+
+header #leftStripes {
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+}
+
+header #rightStripes {
+	position: absolute;
+	right: 17px;
+	bottom: 0;
+}
+
+
+/********/
+/* Menu */
+/********/
+
+#menu {
+	position: fixed;
+	width: 120px;
+	margin: 0 0 0 0;
+	text-align: justify;
+	font-variant: small-caps;
+	text-align: right;
+	white-space: nowrap;
+	margin-left: -18px;
+	
+}
+
+#menu ul {
+	margin-left: 0;
+	list-style-type: none;
+	font-size: @menuText;
+	white-space: nowrap;
+}
+
+#menu li {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+		
+	white-space: nowrap;
+	
+}
+
+#menu li a {
+	color: @green;
+	text-decoration: none;
+}
+
+#menu li a:hover, #menu li.focus a {
+	color: @pink;
+	text-decoration: none;
+}
+
+#menu li.focus a:hover {
+	color: @pink;
+	text-decoration: none;
+}
+
+#menu li a:active {
+	background-color: @white;
+}
+
+#menu img {
+	position: fixed;
+	top: 50px;
+}
+
+
+/**********/
+/* Images */
+/**********/
+
+.thumbBox a img {
+	max-width: 160px;
+	max-height: 160px;
+	height: 300%;
+	width: 300%;
+	
+	-webkit-border-top-right-radius: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-moz-border-radius-topright: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	
+	white-space: nowrap;
+	overflow: hidden;
+
+	font-size: @contentText;
+	margin-bottom: 2em;
+}
+
+.thumbBox img {
+	max-width: none;
+	max-height: none;
+	
+	min-width: 160px;
+	min-height: 160px;
+	
+	overflow: hidden;	
+}
+
+
+/***********/
+/* Contact */
+/***********/
+
+.contact h2 a {
+	color: @green;
+}
+
+.contact a {
+	color: @pink;
+}
+
+.contact {
+	text-align: center;
+	font-family: @sansFonts;
+	font-size: @menuText;
+}
+
+.contact div {
+	margin-bottom: 1em;
+}

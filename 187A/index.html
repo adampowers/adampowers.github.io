@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>187A Usability - Kwan, Lyons, Powers</title>
+    <meta name="description" content="IA Redesign of louisiana.edu for COGS 187A, WI '12 UCSD">
+    <meta name="author" content="Adam Powers | Jenny Lyons | Allan Kwan">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Base Stylsheets http://twitter.github.com/bootstrap/ -->
+    <link rel="stylesheet" href="stylesheets/lib/bootstrap.css" >
+    <link rel="stylesheet" href="stylesheets/lib/jquery.fancybox.css" >
+
+    <!-- Your Stylesheets -->
+    <link rel="stylesheet/less" type="text/css" href="stylesheets/main.css" >
+    
+    <!-- Using LessCSS instead. -AP
+    <link rel="stylesheet" href="stylesheets/main.css" > -->
+
+    <!--  jQuery http://jquery.com/ -->
+    <script src="javascripts/lib/jquery-1.7.1.min.js"></script>
+
+    <!-- Bootstrap Javascripts http://twitter.github.com/bootstrap/javascript.html -->
+    <script src="javascripts/lib/bootstrap.js"></script>
+
+    <!-- Fancybox Lightbox http://fancyapps.com/fancybox/#examples -->
+    <script src="javascripts/lib/jquery.fancybox.js"></script>
+
+    <!-- jQuery One-Page Nav Plugin http://trevordavis.net/blog/jquery-one-page-navigation-plugin -->
+    <script src="javascripts/lib/jquery.scrollTo.js"></script>
+    <script src="javascripts/lib/jquery.nav.min.js"></script>
+
+    <!-- LessCSS.org -->
+    <script src="javascripts/lib/less.js" type="text/javascript"></script>
+
+    <!-- Your Javascripts -->
+    <script src="javascripts/main.js"></script>
+  </head>
+
+  <body>
+    <div class="container" id="top">
+        <header>
+            <div id="titleWrapper">
+                <img id="leftStripes" src="images/lib/greenstripes.png" alt="////" />
+                    <span id="headerTop">IA REDESIGN</span>
+                    <span id="headerBottom">LOUSIANA.EDU</span>
+                <img id="rightStripes" src="images/lib/redstripes.png" alt="\\\\\\" />
+            </div>
+		</header>
+		
+        <div id="main">
+            
+            <div id="menu" class="span1">
+                <ul id="nav">
+                    <li><a href="#top"><strong>top</strong></a></li>
+                    <li><a href="#pages">pages</a></li> 
+                    <li><a href="#analysis"> analysis</a></li>
+                    <li><a href="#personas">personas</a></li>
+                    <li><a href="#choices">choices</a></li>
+                    <li><a href="#decisions">decisions</a></li>		
+                    <li><a href="#contact"><strong>contact</strong></a></li>        
+                </ul>
+            </div>
+
+            <div class="row offset1">
+                <div class="content span3">
+                    <p>Hello!
+                    <p>This page describes the informational architecture redesign of <a href="http://louisiana.edu">louisiana.edu</a>.
+                    <p><strong>You may visit our redesigned site <a href="main.html">here</a>.</strong>
+                </div>
+            </div>
+            <hr id="pages">
+                <h1>Pages Redesigned</h1>
+
+            <div class="row offset1">
+                <div class="content span3">
+                    <p>The pages redesigned were <a href="main.html">Main</a>, <a href="about.html">About UL</a>, 
+                        <a href="admissions.html">Admissions</a>, <a href="academics.html">Academics</a>, and <a href="athletics.html">Athletics</a>.
+                </div>
+            </div>
+            <hr id="analysis">
+                <h1>Competitive Analysis</h1>
+
+            <div class="row offset1">
+                <div class="content span3">   
+                    <p>Found here: <a href="files/IA - Competitive Analysis.doc">IA - Competitive Analysis (.doc)</a>
+                </div>
+            </div>
+
+            <hr id="personas">
+                <h1>User Personas</h1>
+
+            <div class="row offset1">
+                <div class="content span3">
+                    <p>Found here: <a href="files/IA - Personas.pdf">IA - Personas (.pdf)</a>
+                </div>
+            </div>
+
+            <hr id="choices">
+                <h1>Design Choices</h1>
+
+            <div class="row offset1">
+                <div class="content span3">
+                    <p>Upon completing the competitive analysis, it was apparent that the majority of university websites contained both category- and persona-based navigation (current students, prospective students, visitors, etc.). We decided that it was important for our design.
+                    <p>However, two entirely separated navigational elements seemed unwieldy, so we went with a combined tabbed design with broad, top-level categories in the 'home' tab, and a mix of first- and second-level links in the rest of the persona-driven tabs.
+                    <p>The advantage of this approach is that even when diving deep into the site, the persona-driven tabs stay just as accessible as the main links, which facilitates deep exploration without returning to the homepage for links of interest to your specific situation.
+                    <p>It seemed a shame to trade in endearing Walk of Honor graphic for a site entirely devoid of Louisiana branding - especially considering how proud the school is of its heritage - so the background is a high-resolution photo of a swamp on the ULL campus.
+                    <p>While the reddish highlights are derived from the school's logo, the blues and greens of the nav tabs were designed to complement this background photo and provide some needed contrast to the red throughout the site.
+                    <p>We highlighted 'prospective students' a different color from the other personas, as we feel that they're a persona that deserves particular attention, and resources designed to help them should be highlighted as much as possible within a site's design.
+                </div>
+            </div>
+
+            <hr id="decisions">
+                <h1>Hardest Design Decisions</h1>
+
+            <div class="row offset1">
+                <div class="content span3">
+                    <p>The hardest decision was to conform. University sites tend to follow a predictable pattern of design, with only the very best sites innovating in navigation or form. It was an early attempt to create an especially innovative design, only to find myself naturally struggling to complete such a grand challenge, that set me behind.
+                    <p>Eventually, however, I scrapped it and started fresh, and am glad I did. While the site might be more boring, it's functional.
+                    <p>As one would suspect, it was the actual informational restructuring that proved the most full of difficult decisions. While much of the overall structure was taken from the ULL site, it was a challenge to accurately map links from further down in the site to the top-level menu items. As the ULL site contains a good deal more links to categories than it appears to contain content, there are a higher number of decision points compared to other institutional websites.
+                    <p>It was especially difficult to determine what belonged in the persona categories. I was guided greatly by the written personas provided by Jenny and the competitive analysis by Allan, but found that there were numerous items that also deserved to belong there that required scouting out. In the end, I'm not confident that I captured them all, but I feel that a typical user could survive nicely on the links provided.
+                    <p>Of coding time, I spent the most on the central nav element. It went through many iterations; containing images, tabs-on-bottom, and color changes cycled rapidly until I settled on the current scheme. 
+                    <p>Through it all, the project went smoothest when I had a solid idea of what I wanted to go where. If anything, it's a strong suggestion that anyone involved in a similar process should start it out by wireframing, and definitely something I'll begin my next project with.
+                </div>
+            </div>
+            <hr id="contact">
+                <h1>We are:</h1>
+
+            <div class="row offset1">
+                <div class="content span3 contact">
+                    <div>
+                        <h2><a href="images/contact-allan.jpg" class="fancybox" title="Allan Kwan">Allan Kwan</a></h2>
+                        <a href="mailto:adwk10@gmail.com">awk10@gmail.com</a>
+                    </div>
+
+                    <div>
+                        <h2><a href="images/contact-jenny.jpg" class="fancybox" title="Jenny Lyons">Jenny Lyons</a></h2>
+                        <a href="mailto:jennymarie8403@gmail.com">jennymarie8403@gmail.com</a>
+                    </div>
+                    
+                    <div>
+                        <h2><a href="images/contact-adam.png" class="fancybox" title="Adam Powers">Adam Powers</a></h2>
+                        <a href="mailto:adam@powe.rs">adam@powe.rs</a>
+                    </div>
+                    And all rights are reserved (c) 2012.
+                </div>
+            </div>
+        </div>
+        </div> <!-- end container -->
+    </body>
+</html>
